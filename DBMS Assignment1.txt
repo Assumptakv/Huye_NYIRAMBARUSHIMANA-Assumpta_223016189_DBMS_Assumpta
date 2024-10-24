@@ -1,0 +1,214 @@
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 29
+Server version: 8.3.0 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2024, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+mysql> CREATE DATABASE RUHANDE;
+Database changed
+
+mysql>CREATE TABLE NGOMA1(ID INT(6), F-NAME CHAR(16), L_NAME CHAR(13),GENDER CHAR(10), PROVINCE CHAR(12), DISTRICT CHAR(11), SECTOR CHAR(13), CELL CHAR(15),EMAIL VARCHAR(58), TEL_NO INT(14));
+Query OK, 0 rows affected (0.02 sec)
+
+
+mysql> INSERT INTO NGOMA1 VALUES('022','UWERA',Female','EAST','GATSIBO','rukara','kibenga','keza@gmail.com','78060562');
+Query OK, 1 row affected (0.00 sec)
+
+mysql>INSERT INTO NGOMA1 VALUES('023','kalisa','RWEMA','male','EAST','GATSIBO','RWAMIKO','kiriro','kalisa@gmail.com','798214662');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> USE RUHANDE1;
+Database changed
+mysql> SELECT*FROM NGOMA1;
++------+----------+----------+--------+----------+-----------+---------+----------+--------------------+------------+
+| ID   | F_NAME   | L_NAME   | GENDER | PROVINCE | DISTRICT  | SECTOR  | CELL     | EMAIL              | TEL_NO     |
++------+----------+----------+--------+----------+-----------+---------+----------+--------------------+------------+
+|   22 | Assia    | UWERA    | Female | EAST     | GATSIBO   | rukara  | kibenga  | keza@gmail.com     |  798060562 |
+|   23 | kalisa   | RWEMA    | male   | WEST     | GATSIBO   | RWAMIKO | kiriro   | kalisa@gmail.com   |  798214662 |
+|   24 | assumpta | KANYANA  | FEMALE | WEST     | GATSIBO   | RURINDO | KIBOGORA | assumpta@gmail.com |  783332212 |
+|   25 | eric     | NTAMPAKA | male   | west     | gicumbi   | gicumbi | rumuri   | eric@gmail.com     | 2147483647 |
+|   26 | dudu     | kwibuka  | male   | north    | nyamagabe | kavumu  | cyungo   | dudu@gmail.com     |  723331233 |
++------+----------+----------+--------+----------+-----------+---------+----------+--------------------+------------+
+5 rows in set (0.00 sec)
+
+mysql> INSERT INTO NGOMA1 VALUES('027','gogo','MUTETERI','female','south','GATSIBO','REMERA','AKAGARAMA','gogo@gmail.com','07986555532');
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> INSERT INTO NGOMA1 VALUES('028','Betty', 'UWASE','FEMALE','EAST','NGOMA','KAYUNDI','ruri','betty@gmail.com','0732455711');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> SELECT*FROM NGOMA1;
++------+----------+----------+--------+----------+-----------+---------+-----------+--------------------+------------+
+| ID   | F_NAME   | L_NAME   | GENDER | PROVINCE | DISTRICT  | SECTOR  | CELL      | EMAIL              | TEL_NO     |
++------+----------+----------+--------+----------+-----------+---------+-----------+--------------------+------------+
+|   22 | Assia    | UWERA    | Female | EAST     | GATSIBO   | rukara  | kibenga   | keza@gmail.com     |  798060562 |
+|   23 | kalisa   | RWEMA    | male   | WEST     | GATSIBO   | RWAMIKO | kiriro    | kalisa@gmail.com   |  798214662 |
+|   24 | assumpta | KANYANA  | FEMALE | WEST     | GATSIBO   | RURINDO | KIBOGORA  | assumpta@gmail.com |  783332212 |
+|   25 | eric     | NTAMPAKA | male   | west     | gicumbi   | gicumbi | rumuri    | eric@gmail.com     | 2147483647 |
+|   26 | dudu     | kwibuka  | male   | north    | nyamagabe | kavumu  | cyungo    | dudu@gmail.com     |  723331233 |
+|   27 | gogo     | MUTETERI | female | south    | GATSIBO   | REMERA  | AKAGARAMA | gogo@gmail.com     | 2147483647 |
+|   28 | Betty    | UWASE    | FEMALE | EAST     | NGOMA     | KAYUNDI | ruri      | betty@gmail.com    |  732455711 |
++------+----------+----------+--------+----------+-----------+---------+-----------+--------------------+------------+
+7 rows in set (0.00 sec)
+
+mysql> INSERT INTO NGOMA1 VALUES('029','Qeen','FEZA','female','EAST','Gatsibo','remera','akagarama','queen@gmail.com','07234949595');
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> INSERT INTO NGOMA1 VALUES('030','elina','NIYONSABA','FEMALE','EAST','rwamagana','muhanga','harufuri','elina@gmail.com','0723388374');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO NGOMA1 VALUES('031','Aline','UMURERWA','FEMALE','south','ngoma','nyamagabe','kibondo','aline@gmail.com','078859643');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> SELECT*FROM NGOMA1;
++------+----------+-----------+--------+----------+-----------+-----------+-----------+--------------------+------------+
+| ID   | F_NAME   | L_NAME    | GENDER | PROVINCE | DISTRICT  | SECTOR    | CELL      | EMAIL              | TEL_NO     |
++------+----------+-----------+--------+----------+-----------+-----------+-----------+--------------------+------------+
+|   22 | Assia    | UWERA     | Female | EAST     | GATSIBO   | rukara    | kibenga   | keza@gmail.com     |  798060562 |
+|   23 | kalisa   | RWEMA     | male   | WEST     | GATSIBO   | RWAMIKO   | kiriro    | kalisa@gmail.com   |  798214662 |
+|   24 | assumpta | KANYANA   | FEMALE | WEST     | GATSIBO   | RURINDO   | KIBOGORA  | assumpta@gmail.com |  783332212 |
+|   25 | eric     | NTAMPAKA  | male   | west     | gicumbi   | gicumbi   | rumuri    | eric@gmail.com     | 2147483647 |
+|   26 | dudu     | kwibuka   | male   | north    | nyamagabe | kavumu    | cyungo    | dudu@gmail.com     |  723331233 |
+|   27 | gogo     | MUTETERI  | female | south    | GATSIBO   | REMERA    | AKAGARAMA | gogo@gmail.com     | 2147483647 |
+|   28 | Betty    | UWASE     | FEMALE | EAST     | NGOMA     | KAYUNDI   | ruri      | betty@gmail.com    |  732455711 |
+|   29 | Qeen     | FEZA      | female | EAST     | Gatsibo   | remera    | akagarama | queen@gmail.com    | 2147483647 |
+|   30 | elina    | NIYONSABA | FEMALE | EAST     | rwamagana | muhanga   | harufuri  | elina@gmail.com    |  723388374 |
+|   31 | Aline    | UMURERWA  | FEMALE | south    | ngoma     | nyamagabe | kibondo   | aline@gmail.com    |   78859643 |
++------+----------+-----------+--------+----------+-----------+-----------+-----------+--------------------+------------+
+10 rows in set (0.00 sec)
+
+mysql> ALTER TABLE NGOMA1 ADD POSITION;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+mysql> ALTER TABLE NGOMA1 ADD POSITION CHAR(13);
+Query OK, 10 rows affected (0.08 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+mysql> SELECT*FROM NGOMA1;
++------+----------+-----------+--------+----------+-----------+-----------+-----------+--------------------+------------+----------+
+| ID   | F_NAME   | L_NAME    | GENDER | PROVINCE | DISTRICT  | SECTOR    | CELL      | EMAIL              | TEL_NO     | POSITION |
++------+----------+-----------+--------+----------+-----------+-----------+-----------+--------------------+------------+----------+
+|   22 | Assia    | UWERA     | Female | EAST     | GATSIBO   | rukara    | kibenga   | keza@gmail.com     |  798060562 | NULL     |
+|   23 | kalisa   | RWEMA     | male   | WEST     | GATSIBO   | RWAMIKO   | kiriro    | kalisa@gmail.com   |  798214662 | NULL     |
+|   24 | assumpta | KANYANA   | FEMALE | WEST     | GATSIBO   | RURINDO   | KIBOGORA  | assumpta@gmail.com |  783332212 | NULL     |
+|   25 | eric     | NTAMPAKA  | male   | west     | gicumbi   | gicumbi   | rumuri    | eric@gmail.com     | 2147483647 | NULL     |
+|   26 | dudu     | kwibuka   | male   | north    | nyamagabe | kavumu    | cyungo    | dudu@gmail.com     |  723331233 | NULL     |
+|   27 | gogo     | MUTETERI  | female | south    | GATSIBO   | REMERA    | AKAGARAMA | gogo@gmail.com     | 2147483647 | NULL     |
+|   28 | Betty    | UWASE     | FEMALE | EAST     | NGOMA     | KAYUNDI   | ruri      | betty@gmail.com    |  732455711 | NULL     |
+|   29 | Qeen     | FEZA      | female | EAST     | Gatsibo   | remera    | akagarama | queen@gmail.com    | 2147483647 | NULL     |
+|   30 | elina    | NIYONSABA | FEMALE | EAST     | rwamagana | muhanga   | harufuri  | elina@gmail.com    |  723388374 | NULL     |
+|   31 | Aline    | UMURERWA  | FEMALE | south    | ngoma     | nyamagabe | kibondo   | aline@gmail.com    |   78859643 | NULL     |
++------+----------+-----------+--------+----------+-----------+-----------+-----------+--------------------+------------+----------+
+10 rows in set (0.00 sec)
+
+mysql> UPDATE NGOMA1 SET POSITION= 'NURSE' WHERE DISTRICT= 'GATSIBO';
+Query OK, 5 rows affected (0.01 sec)
+Rows matched: 5  Changed: 5  Warnings: 0
+
+mysql> SELECT*FROM NGOMA1;
++------+----------+-----------+--------+----------+-----------+-----------+-----------+--------------------+------------+----------+
+| ID   | F_NAME   | L_NAME    | GENDER | PROVINCE | DISTRICT  | SECTOR    | CELL      | EMAIL              | TEL_NO     | POSITION |
++------+----------+-----------+--------+----------+-----------+-----------+-----------+--------------------+------------+----------+
+|   22 | Assia    | UWERA     | Female | EAST     | GATSIBO   | rukara    | kibenga   | keza@gmail.com     |  798060562 | NURSE    |
+|   23 | kalisa   | RWEMA     | male   | WEST     | GATSIBO   | RWAMIKO   | kiriro    | kalisa@gmail.com   |  798214662 | NURSE    |
+|   24 | assumpta | KANYANA   | FEMALE | WEST     | GATSIBO   | RURINDO   | KIBOGORA  | assumpta@gmail.com |  783332212 | NURSE    |
+|   25 | eric     | NTAMPAKA  | male   | west     | gicumbi   | gicumbi   | rumuri    | eric@gmail.com     | 2147483647 | NULL     |
+|   26 | dudu     | kwibuka   | male   | north    | nyamagabe | kavumu    | cyungo    | dudu@gmail.com     |  723331233 | NULL     |
+|   27 | gogo     | MUTETERI  | female | south    | GATSIBO   | REMERA    | AKAGARAMA | gogo@gmail.com     | 2147483647 | NURSE    |
+|   28 | Betty    | UWASE     | FEMALE | EAST     | NGOMA     | KAYUNDI   | ruri      | betty@gmail.com    |  732455711 | NULL     |
+|   29 | Qeen     | FEZA      | female | EAST     | Gatsibo   | remera    | akagarama | queen@gmail.com    | 2147483647 | NURSE    |
+|   30 | elina    | NIYONSABA | FEMALE | EAST     | rwamagana | muhanga   | harufuri  | elina@gmail.com    |  723388374 | NULL     |
+|   31 | Aline    | UMURERWA  | FEMALE | south    | ngoma     | nyamagabe | kibondo   | aline@gmail.com    |   78859643 | NULL     |
++------+----------+-----------+--------+----------+-----------+-----------+-----------+--------------------+------------+----------+
+10 rows in set (0.00 sec)
+
+mysql> UPDATE NGOMA1 SET POSITION= 'DOCTO' WHERE PROVINCE= 'west';
+Query OK, 3 rows affected (0.00 sec)
+Rows matched: 3  Changed: 3  Warnings: 0
+
+mysql> SELECT*FROM NGOMA1;
++------+----------+-----------+--------+----------+-----------+-----------+-----------+--------------------+------------+----------+
+| ID   | F_NAME   | L_NAME    | GENDER | PROVINCE | DISTRICT  | SECTOR    | CELL      | EMAIL              | TEL_NO     | POSITION |
++------+----------+-----------+--------+----------+-----------+-----------+-----------+--------------------+------------+----------+
+|   22 | Assia    | UWERA     | Female | EAST     | GATSIBO   | rukara    | kibenga   | keza@gmail.com     |  798060562 | NURSE    |
+|   23 | kalisa   | RWEMA     | male   | WEST     | GATSIBO   | RWAMIKO   | kiriro    | kalisa@gmail.com   |  798214662 | DOCTO    |
+|   24 | assumpta | KANYANA   | FEMALE | WEST     | GATSIBO   | RURINDO   | KIBOGORA  | assumpta@gmail.com |  783332212 | DOCTO    |
+|   25 | eric     | NTAMPAKA  | male   | west     | gicumbi   | gicumbi   | rumuri    | eric@gmail.com     | 2147483647 | DOCTO    |
+|   26 | dudu     | kwibuka   | male   | north    | nyamagabe | kavumu    | cyungo    | dudu@gmail.com     |  723331233 | NULL     |
+|   27 | gogo     | MUTETERI  | female | south    | GATSIBO   | REMERA    | AKAGARAMA | gogo@gmail.com     | 2147483647 | NURSE    |
+|   28 | Betty    | UWASE     | FEMALE | EAST     | NGOMA     | KAYUNDI   | ruri      | betty@gmail.com    |  732455711 | NULL     |
+|   29 | Qeen     | FEZA      | female | EAST     | Gatsibo   | remera    | akagarama | queen@gmail.com    | 2147483647 | NURSE    |
+|   30 | elina    | NIYONSABA | FEMALE | EAST     | rwamagana | muhanga   | harufuri  | elina@gmail.com    |  723388374 | NULL     |
+|   31 | Aline    | UMURERWA  | FEMALE | south    | ngoma     | nyamagabe | kibondo   | aline@gmail.com    |   78859643 | NULL     |
++------+----------+-----------+--------+----------+-----------+-----------+-----------+--------------------+------------+----------+
+10 rows in set (0.00 sec)
+
+mysql> ALTER TABLE NGOMA1 DROP CELL;
+Query OK, 10 rows affected (0.07 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+mysql> SELE*FROM NGOMA1;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELE*FROM NGOMA1' at line 1
+mysql> SELECT*FROM NGOMA1;
++------+----------+-----------+--------+----------+-----------+-----------+--------------------+------------+----------+
+| ID   | F_NAME   | L_NAME    | GENDER | PROVINCE | DISTRICT  | SECTOR    | EMAIL              | TEL_NO     | POSITION |
++------+----------+-----------+--------+----------+-----------+-----------+--------------------+------------+----------+
+|   22 | Assia    | UWERA     | Female | EAST     | GATSIBO   | rukara    | keza@gmail.com     |  798060562 | NURSE    |
+|   23 | kalisa   | RWEMA     | male   | WEST     | GATSIBO   | RWAMIKO   | kalisa@gmail.com   |  798214662 | DOCTO    |
+|   24 | assumpta | KANYANA   | FEMALE | WEST     | GATSIBO   | RURINDO   | assumpta@gmail.com |  783332212 | DOCTO    |
+|   25 | eric     | NTAMPAKA  | male   | west     | gicumbi   | gicumbi   | eric@gmail.com     | 2147483647 | DOCTO    |
+|   26 | dudu     | kwibuka   | male   | north    | nyamagabe | kavumu    | dudu@gmail.com     |  723331233 | NULL     |
+|   27 | gogo     | MUTETERI  | female | south    | GATSIBO   | REMERA    | gogo@gmail.com     | 2147483647 | NURSE    |
+|   28 | Betty    | UWASE     | FEMALE | EAST     | NGOMA     | KAYUNDI   | betty@gmail.com    |  732455711 | NULL     |
+|   29 | Qeen     | FEZA      | female | EAST     | Gatsibo   | remera    | queen@gmail.com    | 2147483647 | NURSE    |
+|   30 | elina    | NIYONSABA | FEMALE | EAST     | rwamagana | muhanga   | elina@gmail.com    |  723388374 | NULL     |
+|   31 | Aline    | UMURERWA  | FEMALE | south    | ngoma     | nyamagabe | aline@gmail.com    |   78859643 | NULL     |
++------+----------+-----------+--------+----------+-----------+-----------+--------------------+------------+----------+
+10 rows in set (0.00 sec)
+
+mysql> SELECT L_NAME, GENDER, EMAIL FROM NGOMA1;
++-----------+--------+--------------------+
+| L_NAME    | GENDER | EMAIL              |
++-----------+--------+--------------------+
+| UWERA     | Female | keza@gmail.com     |
+| RWEMA     | male   | kalisa@gmail.com   |
+| KANYANA   | FEMALE | assumpta@gmail.com |
+| NTAMPAKA  | male   | eric@gmail.com     |
+| kwibuka   | male   | dudu@gmail.com     |
+| MUTETERI  | female | gogo@gmail.com     |
+| UWASE     | FEMALE | betty@gmail.com    |
+| FEZA      | female | queen@gmail.com    |
+| NIYONSABA | FEMALE | elina@gmail.com    |
+| UMURERWA  | FEMALE | aline@gmail.com    |
++-----------+--------+--------------------+
+10 rows in set (0.00 sec)
+
+mysql> SELECT*FROM NGOMA1 WHERE L_NAME= 'UWERA' AND POSITION='NURSE';
++------+--------+--------+--------+----------+----------+--------+----------------+-----------+----------+
+| ID   | F_NAME | L_NAME | GENDER | PROVINCE | DISTRICT | SECTOR | EMAIL          | TEL_NO    | POSITION |
++------+--------+--------+--------+----------+----------+--------+----------------+-----------+----------+
+|   22 | Assia  | UWERA  | Female | EAST     | GATSIBO  | rukara | keza@gmail.com | 798060562 | NURSE    |
++------+--------+--------+--------+----------+----------+--------+----------------+-----------+----------+
+1 row in set (0.00 sec)
+
+mysql> SELECT*FROM NGOMA1 WHERE GENDER= 'FEMALE' OR DISTRICT='GATSIBO';
++------+----------+-----------+--------+----------+-----------+-----------+--------------------+------------+----------+
+| ID   | F_NAME   | L_NAME    | GENDER | PROVINCE | DISTRICT  | SECTOR    | EMAIL              | TEL_NO     | POSITION |
++------+----------+-----------+--------+----------+-----------+-----------+--------------------+------------+----------+
+|   22 | Assia    | UWERA     | Female | EAST     | GATSIBO   | rukara    | keza@gmail.com     |  798060562 | NURSE    |
+|   23 | kalisa   | RWEMA     | male   | WEST     | GATSIBO   | RWAMIKO   | kalisa@gmail.com   |  798214662 | DOCTO    |
+|   24 | assumpta | KANYANA   | FEMALE | WEST     | GATSIBO   | RURINDO   | assumpta@gmail.com |  783332212 | DOCTO    |
+|   27 | gogo     | MUTETERI  | female | south    | GATSIBO   | REMERA    | gogo@gmail.com     | 2147483647 | NURSE    |
+|   28 | Betty    | UWASE     | FEMALE | EAST     | NGOMA     | KAYUNDI   | betty@gmail.com    |  732455711 | NULL     |
+|   29 | Qeen     | FEZA      | female | EAST     | Gatsibo   | remera    | queen@gmail.com    | 2147483647 | NURSE    |
+|   30 | elina    | NIYONSABA | FEMALE | EAST     | rwamagana | muhanga   | elina@gmail.com    |  723388374 | NULL     |
+|   31 | Aline    | UMURERWA  | FEMALE | south    | ngoma     | nyamagabe | aline@gmail.com    |   78859643 | NULL     |
++------+----------+-----------+--------+----------+-----------+-----------+--------------------+------------+----------+
+8 rows in set (0.00 sec)
+
+mysql>
